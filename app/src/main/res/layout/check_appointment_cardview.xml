@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="353dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="195dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/patient_name_dcheck"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Patient: "
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Today"
+            android:textSize="17sp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginLeft="15dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="35dp"
+            app:cardElevation="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/slot_time_dcheck"
+                android:textSize="15sp"
+                android:text="9:00 AM- 11:00 AM"
+                />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/background_two"/>
+
+
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="40dp"
+            android:id="@+id/call_button_doctor"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#002059"
+            android:text="Call"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

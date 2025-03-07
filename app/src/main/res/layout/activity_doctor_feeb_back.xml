@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".DoctorFeebBackActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Doctor's Feedback"
+        android:textSize="33sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="10dp"
+        android:id="@+id/feedback_cardview"
+        >
+
+        <EditText
+            android:layout_width="330dp"
+            android:background="@android:color/transparent"
+            android:layout_height="70dp"
+            android:maxHeight="150dp"
+            android:id="@+id/feedback_edittext"
+            android:hint="Feedback"
+            android:scrollbars="vertical"
+            android:layout_marginLeft="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/feedback_cardview"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#88B7E6"
+        android:text="Submit"
+        android:id="@+id/submit_feedback"
+        android:textSize="15sp"/>
+
+
+
+</RelativeLayout>

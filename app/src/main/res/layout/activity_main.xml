@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Welcome to Deep ChemoCare"
+
+        android:textSize="33sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textview1_yoga_activity"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#01244D"
+        app:cardElevation="30dp"
+        android:layout_above="@+id/doctor_cardview_mainactivity"
+        android:id="@+id/patient_cardview_mainactivity"
+        android:layout_marginBottom="14dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Patient"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="20dp"
+        android:id="@+id/doctor_cardview_mainactivity"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_marginBottom="150dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Doctor"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    
+</RelativeLayout>

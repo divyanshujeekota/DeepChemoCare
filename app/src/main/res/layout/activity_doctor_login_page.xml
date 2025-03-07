@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/login_background"
+    tools:context=".DoctorLoginPage">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_above="@+id/password_cardview_doctor_login_page"
+        android:id="@+id/email_cardview_doctor_login_page"
+        android:layout_marginBottom="14dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <EditText
+                android:id="@+id/email_edittext_doctor_login_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/raleway_medium"
+                android:hint="Email"
+                android:paddingLeft="20dp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        app:cardElevation="20dp"
+        android:id="@+id/password_cardview_doctor_login_page"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/forgot_password_doctor_login_page"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/raleway_medium"
+                android:hint="Password"
+                android:paddingLeft="20dp"
+                android:id="@+id/password_edittext_doctor_login_page"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword"
+
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Forgot Password?"
+        android:id="@+id/forgot_password_doctor_login_page"
+        android:textSize="14sp"
+        android:textColor="#dcdcdc"
+        android:layout_above="@+id/login_cardview_doctor_login_page"
+        android:layout_alignRight="@+id/login_cardview_doctor_login_page"
+        android:layout_marginBottom="20dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="20dp"
+        android:id="@+id/login_cardview_doctor_login_page"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#002059"
+        android:layout_marginBottom="150dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/dont_have_account_doctor_login_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign Up"
+
+        android:textColor="#dcdcdc"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+</RelativeLayout>

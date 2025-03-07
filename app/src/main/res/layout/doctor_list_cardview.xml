@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:layout_height="190dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="@drawable/cardview_borderline">
+        
+        <ImageView
+            android:layout_width="80dp"
+            android:id="@+id/doctor_image"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/doctors_in_white_coats"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/doctor_image"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/doctor_name"
+            android:layout_toRightOf="@+id/doctor_image"
+            android:fontFamily="@font/inter_bold"
+            android:text="Dr. Shiv"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_name"
+            android:layout_alignLeft="@+id/doctor_name"
+            android:fontFamily="@font/inter_semibold"
+            android:id="@+id/special_doctor_list"
+            android:text="General practioner,Chennai"
+            android:textSize="15dp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor's Rating: "
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/doctor_rating"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#88B7E6"
+            android:textColor="#000000"
+            android:id="@+id/book_appointment_button_doctorlist"
+            android:text="Make an appointment"
+            android:textSize="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Consultation Fees"
+            android:textColor="#0A4181" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Rs. 500"
+            android:textColor="#0A4181" />
+
+
+
+
+
+        
+        
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

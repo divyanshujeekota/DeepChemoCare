@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModelActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/upload_imageview"
+        />
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="159dp"
+        android:layout_height="46.92dp"
+        android:id="@+id/select_image_button"
+        app:cardBackgroundColor="#8699FD"
+        app:cardCornerRadius="24dp"
+        android:layout_below="@+id/upload_imageview"
+        android:layout_marginTop="30dp"
+
+        android:layout_centerHorizontal="true"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                android:textSize="16.8sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="159dp"
+        android:layout_height="46.92dp"
+        android:id="@+id/upload_image_button"
+        app:cardBackgroundColor="#8699FD"
+        app:cardCornerRadius="24dp"
+        android:layout_below="@+id/select_image_button"
+        android:layout_marginTop="30dp"
+
+        android:layout_centerHorizontal="true"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:textSize="16.8sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results:"
+        android:textSize="30sp"
+        android:id="@+id/a"
+        android:layout_below="@+id/upload_image_button"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skin Lesion: "
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/b"
+        android:layout_below="@+id/a"
+        android:layout_marginLeft="20dp"/>
+
+
+
+
+
+
+</RelativeLayout>

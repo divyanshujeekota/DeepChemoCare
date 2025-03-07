@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrescriptionViewPatient">
+
+
+        <!-- Hospital / Clinic Name -->
+        <TextView
+            android:id="@+id/hospital_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Medicine Prescription"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Doctor Name -->
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="Dr. John Doe"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/hospital_name"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Doctor Speciality -->
+        <TextView
+            android:id="@+id/doctor_speciality"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="MBBS, MD (General Physician)"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/doctor_name"/>
+
+        <!-- Doctor Contact -->
+        <TextView
+            android:id="@+id/doctor_contact"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: +91 98765 43210"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/doctor_speciality"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Separator Line -->
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/doctor_contact"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Patient Details -->
+        <TextView
+            android:id="@+id/patient_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient: John Smith | Gender: Male"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/separator1"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Separator Line -->
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/patient_details"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Prescription Table Header -->
+        <RelativeLayout
+            android:id="@+id/prescription_header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/darker_gray"
+            android:padding="8dp"
+            android:layout_below="@id/separator2">
+
+            <TextView
+                android:id="@+id/medicine_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medicine_linearlayout"
+            android:orientation="vertical"
+            android:layout_below="@id/prescription_header"
+            />
+
+
+        <!-- Notes -->
+        <TextView
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+
+            android:text="Notes: Drink plenty of water and get enough rest."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/medicine_linearlayout"
+
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"/>
+
+        <!-- Doctor's Signature -->
+        <TextView
+            android:id="@+id/doctor_signature"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:text="_________________________\nSignature"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeepChemoCare"
+        tools:targetApi="31">
+        <activity
+            android:name=".MotivationActivityDesc"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DPrescription"
+            android:exported="false" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduledAppointment"
+            android:exported="false" />
+        <activity
+            android:name=".PatientProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorFeebBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SOSDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrescriptionViewPatient"
+            android:exported="false" />
+        <activity
+            android:name=".ModelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DCheckAppointment"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorSeePage"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeatMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".YogaDescriptionactivity"
+            android:exported="false" />
+        <activity
+            android:name=".YogaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PreventionTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DMainPage"
+            android:exported="false" />
+        <activity
+            android:name=".BookAppointmentPatient"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorLoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".PMainPage"
+            android:exported="false" />
+        <activity
+            android:name=".PatientLoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCAY-K0DjFeFpOEACIcV2em4MyG2OJTIkY" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

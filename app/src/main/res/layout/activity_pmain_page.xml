@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PMainPage">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:id="@+id/profile_button_pmainpage"
+            android:layout_height="50dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/cardview_borderline"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/baseline_settings_24"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+        android:id="@+id/hello_user_textview_pmainpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="Hello User,"
+        android:textSize="35sp" />
+
+
+        
+        <androidx.cardview.widget.CardView
+            android:id="@+id/first_cardview_pmainpage"
+            android:layout_width="353dp"
+            android:layout_height="200dp"
+            app:cardElevation="20dp"
+            android:layout_below="@+id/hello_user_textview_pmainpage"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_borderline">
+                
+                
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/appointment_reminder_cardview"
+                    app:cardBackgroundColor="#87cefa"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:padding="3dp"
+                        android:src="@drawable/icons"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp"
+                        android:id="@+id/calerder_image_not_useful"
+                        android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="13dp"
+                            android:layout_toRightOf="@+id/calerder_image_not_useful"
+                            android:layout_centerVertical="true"
+                            android:textSize="12sp"
+                            android:text="Appointment Reminder"/>
+
+
+
+
+
+                    </RelativeLayout>
+
+                    
+                    
+                </androidx.cardview.widget.CardView>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/doctors_in_white_coats"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/schedule_textview"
+                    android:layout_below="@+id/appointment_reminder_cardview"
+                    android:layout_alignLeft="@+id/appointment_reminder_cardview"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Schedule Your\nNext Appointment"
+                    android:textSize="22dp" />
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    app:cardBackgroundColor="#002059"
+                    android:id="@+id/schedule_now_cardview_pmain_page"
+                    android:layout_alignLeft="@+id/appointment_reminder_cardview"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="20dp">
+                    
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="Schedule Now"
+                            android:textSize="15sp"
+                            android:layout_centerInParent="true"
+                            android:textColor="#FFFFFF" />
+                    </RelativeLayout>
+                    
+                    
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/first_cardview_pmainpage"
+            android:layout_marginTop="30dp"
+            android:id="@+id/linearlayout_one_pmain_page"
+            android:orientation="horizontal"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/cancer_detection_pmainpage"
+                app:cardBackgroundColor="#88B7E6"
+                app:cardCornerRadius="20dp"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="Cancer\nDetection"
+                        android:textColor="#002059"
+                        android:textSize="20dp" />
+                    
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/add_photo_alternate"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="13dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload an image to get\nAI-powered analysis."
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="79dp"
+                        android:textColor="#002059"
+                        android:textSize="13dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/east"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        />
+
+
+                    
+                    
+                </RelativeLayout>
+                
+                
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                app:cardBackgroundColor="#88B7E6"
+                app:cardCornerRadius="20dp"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="Suggested\nMedicines"
+                        android:textColor="#002059"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/pill"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get AI-driven recommendations for medicines."
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="79dp"
+                        android:textColor="#002059"
+                        android:textSize="13dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/east"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linearlayout_one_pmain_page"
+            android:layout_marginTop="15dp"
+            android:id="@+id/linearlayout_two_pmain_page"
+            android:orientation="horizontal"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#88B7E6"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/yoga_pmain_page"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="Yoga &amp;\nExercise"
+                        android:textColor="#002059"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/self_improvement"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="13dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explore guided yoga\nroutines designed to\nboost immunity."
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="79dp"
+                        android:textColor="#002059"
+                        android:textSize="13dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/east"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/prevention_tips_cardview"
+                android:layout_marginLeft="15dp"
+                app:cardBackgroundColor="#88B7E6"
+                app:cardCornerRadius="20dp"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="Prevention\nTips"
+                        android:textColor="#002059"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/local_hospital"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explore tips and\nhealth facts."
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="79dp"
+                        android:textColor="#002059"
+                        android:textSize="13dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/east"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/forth_cardview_pmainpage"
+            android:layout_width="353dp"
+            android:layout_height="250dp"
+            app:cardBackgroundColor="#88B7E6"
+            android:layout_below="@+id/linearlayout_two_pmain_page"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="UV Risk Near You"
+                    android:textColor="#002059"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="19sp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heat_map"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Check real-time UV levels in your area and stay\nprotected from harmful sun exposure."
+                    android:textSize="11sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#002059"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/east"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginRight="10dp"/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/linearlayout_three_pmain_page"
+            android:layout_marginTop="15dp"
+            android:id="@+id/linearlayout_four_pmain_page"
+            android:orientation="horizontal"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#88B7E6"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/prescription_pmain_page"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="Prescription"
+                        android:textColor="#002059"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connect with others on\nthe same journey for\nsupport and shared\nexperiences."
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="79dp"
+                        android:textColor="#002059"
+                        android:textSize="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/east"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/success_cardview"
+                android:layout_marginLeft="15dp"
+                app:cardBackgroundColor="#88B7E6"
+                app:cardCornerRadius="20dp"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="Success\nStory"
+
+                        android:textColor="#002059"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explore tips and\nhealth facts."
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="79dp"
+                        android:textColor="#002059"
+                        android:textSize="13dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/success_button"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/east"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/forth_cardview_pmainpage"
+            android:layout_marginTop="15dp"
+            android:id="@+id/linearlayout_three_pmain_page"
+            android:orientation="horizontal"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#88B7E6"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/community_pmain_page"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="Community"
+                        android:textColor="#002059"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/groups_3"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connect with others on\nthe same journey for\nsupport and shared\nexperiences."
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="79dp"
+                        android:textColor="#002059"
+                        android:textSize="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/east"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/Secondary_tips_cardview"
+                android:layout_marginLeft="15dp"
+                app:cardBackgroundColor="#88B7E6"
+                app:cardCornerRadius="20dp"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:text="SOS\nDoctor"
+                        android:textColor="#002059"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ecg_heart"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explore tips and\nhealth facts."
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="79dp"
+                        android:textColor="#002059"
+                        android:textSize="13dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/east"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/remote_view_patient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/local_view_patient"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="16dp" />
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
