@@ -13,7 +13,7 @@ The **Skin Cancer Detection App** is an AI-powered mobile application that helps
 ✅ **Medicine Purchase Integration** – Directly order prescribed medicines from the app.  
 
 ## **🖼️ Screenshots**  
-![Image](s1.png)
+![Image](s1.jpg)
 ## **🎥 Demo Video**  
 [![Watch the Video](screenshots/video-thumbnail.png)](https://your-video-link.com)  
 👉 **Click the thumbnail to watch the demo!**  
